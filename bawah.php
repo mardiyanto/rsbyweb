@@ -11,10 +11,10 @@
                             </p>
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-share fa-2x text-white me-2"></i>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.facebook.com/p/Rsu-Kartini-100064277072649/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.facebook.com/p/#/"><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.instagram.com/rsu_kartini/"><i class="fab fa-instagram"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.youtube.com/@rsukartinikalirejolampung8211"><i class="fab fa-youtube"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.instagram.com/#/"><i class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.youtube.com/#"><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                             <h4 class="text-secondary mb-4">Jam Operasional</h4>
                             <div class="mb-3">
                                 <h6 class="text-muted mb-0">Poli Klinik</h6>
-                                <p class="text-white mb-0">Senin - Sabtu: 08.00 - 21.00</p>
+                                <p class="text-white mb-0">Senin - Jumat: 08.00 - 21.00</p>
                             </div>
                             <div class="mb-3">
                                 <h6 class="text-muted mb-0">UGD/IGD:</h6>

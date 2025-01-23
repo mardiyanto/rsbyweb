@@ -4,17 +4,17 @@
             <div class="row gx-0 align-items-center" style="height: 45px;">
                 <div class="col-lg-8 text-center text-lg-start mb-lg-0">
                     <div class="d-flex flex-wrap">
-                        <a href='https://maps.app.goo.gl/F8bcqyEfFqtzXWPt9' target='blank' class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                        <a href='https://maps.app.goo.gl/RaQZQuZr4e4webs2A' target='blank' class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
                         <a href="#" class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2"></i><?php echo"$k_k[tahun]";?></a>
                         <a href="#" class="text-light me-0"><i class="fas fa-envelope text-primary me-2"></i><?php echo"$k_k[alias]";?></a>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center text-lg-end">
                     <div class="d-flex align-items-center justify-content-end">
-                        <a href="https://www.facebook.com/p/Rsu-Kartini-100064277072649/" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/p/#/" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/rsu_kartini/" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@rsukartinikalirejolampung8211" class="btn btn-light btn-square border rounded-circle nav-fill me-0"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/#/" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/" class="btn btn-light btn-square border rounded-circle nav-fill me-0"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
                 <a href="index.php" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0"><img src="foto/logo.png" alt="Logo" style="width: 60px;"> <?php echo"$k_k[nama_app]";?></h1>
+                    <h1 class="text-primary m-0"><img src="foto/logo.png" alt="Logo" style="width: 50px;"> <?php echo"$k_k[nama_app]";?></h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">

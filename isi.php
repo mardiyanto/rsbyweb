@@ -222,14 +222,14 @@ echo"<!-- Page Header Start -->
                     </div>
                     <h4 class='mb-3'>Alamat Kantor</h4>
                     <p class='mb-2'>$k_k[alamat]</p>
-                    <a class='btn btn-primary px-4' href='https://maps.app.goo.gl/F8bcqyEfFqtzXWPt9' target='blank'>Direction <i class='fa fa-arrow-right ms-2'></i></a>
+                    <a class='btn btn-primary px-4' href='https://maps.app.goo.gl/RaQZQuZr4e4webs2A' target='blank'>Direction <i class='fa fa-arrow-right ms-2'></i></a>
                 </div>
             </div>
         </div>
         <div class='row mb-5'>
             <div class='col-12 wow fadeInUp' data-wow-delay='0.1s'>
                 <iframe class='w-100'
-                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7946.406122965735!2d104.96140139123648!3d-5.230767978988103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e473592f8e6b607%3A0xfceb58b9af2bb24a!2sRSU%20Kartini%20Kalirejo!5e0!3m2!1sid!2sid!4v1716535136907!5m2!1sid!2sid'
+                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d150781.0957119743!2d105.14183284523416!3d-5.37433747446067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40daa93eb7e2dd%3A0x3f1feca98d2dfd93!2sRumah%20Sakit%20Bhayangkara%20Polda%20Lampung!5e1!3m2!1sid!2sid!4v1737619961021!5m2!1sid!2sid'
                 frameborder='0' style='min-height: 450px; border:0;' allowfullscreen='' aria-hidden='false'
                 tabindex='0'></iframe>
             </div>
