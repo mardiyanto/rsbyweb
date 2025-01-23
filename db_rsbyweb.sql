@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Waktu pembuatan: 24 Bulan Mei 2024 pada 09.21
--- Versi server: 10.4.22-MariaDB-log
--- Versi PHP: 7.4.27
+-- Host: 127.0.0.1
+-- Waktu pembuatan: 23 Jan 2025 pada 04.42
+-- Versi server: 10.1.25-MariaDB
+-- Versi PHP: 7.3.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_rskartini`
+-- Database: `db_rsbyweb`
 --
 
 -- --------------------------------------------------------
@@ -40,10 +40,10 @@ CREATE TABLE `alumni` (
 --
 
 INSERT INTO `alumni` (`id_alumni`, `nama`, `pekerjaan`, `keterangan`, `gambar`) VALUES
-(2, 'SUJONO', 'KALIREJO', 'Saya sangat terkesan dengan pelayanan di Rumah Sakit Kartini Kalirejo Lampung. Dokter dan perawatnya sangat ramah dan profesional. Saya merasa didengarkan dan diperlakukan dengan sangat baik. Terima kasih banyak atas perawatan yang luar biasa!', '24052024105818.jpg'),
-(3, 'RUSTAM', 'KALIREJO', 'Pengalaman saya di Rumah Sakit Kartini Kalirejo benar-benar luar biasa. Fasilitasnya modern dan bersih, serta stafnya sangat perhatian. Saya merasa tenang dan nyaman selama masa perawatan saya. Saya pasti akan merekomendasikan rumah sakit ini kepada teman dan keluarga.', '24052024112331.jpg'),
-(4, 'FATIMAH', 'KALIREJO', 'aya ingin berterima kasih kepada tim medis di Rumah Sakit Kartini Kalirejo atas perawatan yang sangat baik. Mereka sangat responsif terhadap kebutuhan saya dan memberikan solusi yang efektif. Saya merasa diprioritaskan dan didukung sepenuhnya selama saya berada di sana.', '24052024112412.jpg'),
-(5, 'Muhammad Iwan', 'KALIREJO', 'Saya sangat menghargai keramahan dan profesionalisme dokter dan perawat di Rumah Sakit Kartini Kalirejo. Mereka menjelaskan prosedur dengan jelas dan memberikan perawatan yang sangat baik. Saya merasa aman dan dipercayakan sepenuhnya kepada mereka. Terima kasih atas semua bantuan dan dukungannya.', '24052024112528.jpg');
+(2, 'SUJONO', 'BADAR LAMPUNG', 'Saya sangat terkesan dengan pelayanan di Rumah Sakit Bhayangkara Polda Lampung. Dokter dan perawatnya sangat ramah dan profesional. Saya merasa didengarkan dan diperlakukan dengan sangat baik. Terima kasih banyak atas perawatan yang luar biasa!', '24052024105818.jpg'),
+(3, 'RUSTAM', 'KALIREJO', 'Pengalaman saya di Rumah Sakit Bhayangkara Polda Lampung benar-benar luar biasa. Fasilitasnya modern dan bersih, serta stafnya sangat perhatian. Saya merasa tenang dan nyaman selama masa perawatan saya. Saya pasti akan merekomendasikan rumah sakit ini kepada teman dan keluarga.', '24052024112331.jpg'),
+(4, 'FATIMAH', 'LAMPUNG', 'aya ingin berterima kasih kepada tim medis di Rumah Sakit Bhayangkara Polda Lampung atas perawatan yang sangat baik. Mereka sangat responsif terhadap kebutuhan saya dan memberikan solusi yang efektif. Saya merasa diprioritaskan dan didukung sepenuhnya selama saya berada di sana.', '24052024112412.jpg'),
+(5, 'Muhammad Iwan', 'LAMPUNG', 'Saya sangat menghargai keramahan dan profesionalisme dokter dan perawat di Rumah Sakit Bhayangkara Polda Lampung. Mereka menjelaskan prosedur dengan jelas dan memberikan perawatan yang sangat baik. Saya merasa aman dan dipercayakan sepenuhnya kepada mereka. Terima kasih atas semua bantuan dan dukungannya.', '24052024112528.jpg');
 
 -- --------------------------------------------------------
 
@@ -56,9 +56,9 @@ CREATE TABLE `berita` (
   `id_sesi` varchar(200) DEFAULT NULL,
   `judul` text NOT NULL,
   `tanggal` varchar(11) NOT NULL,
-  `jam` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `jam` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `isi` text NOT NULL,
-  `dilihat` int(5) NOT NULL DEFAULT 0,
+  `dilihat` int(5) NOT NULL DEFAULT '0',
   `gambar` varchar(100) DEFAULT NULL,
   `jenis` varchar(100) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
@@ -68,9 +68,7 @@ CREATE TABLE `berita` (
 --
 
 INSERT INTO `berita` (`id_berita`, `id_sesi`, `judul`, `tanggal`, `jam`, `isi`, `dilihat`, `gambar`, `jenis`) VALUES
-(3, 'a428a7b8462014d7785e326960247cd9', 'POLI PENYAKIT DALAM', '17/05/2024', '2024-05-24 06:55:43', '<p>diagnosis, pengobatan, dan manajemen penyakit-penyakit dalam tubuh manusia, terutama yang mempengaruhi organ dalam seperti jantung, paru-paru, ginjal, hati, dan saluran pencernaan</p>\r\n', 1, '17052024023728.jpg', 'poli'),
-(4, '0b02978d639315d1a8a9a7e225ac646d', 'Selamat Hari Raya Waisak! Semoga kedamaian dan kebijaksanaan selalu menyertai langkah-langkah kita', '24/05/2024', '2024-05-24 06:55:54', '<p>Rumah Sakit Kartini Kalirejo Lampung Tengah dengan ini mengucapkan Selamat Hari Raya Waisak kepada seluruh umat Buddha yang merayakannya. Semoga kedamaian dan kebijaksanaan senantiasa menyertai langkah-langkah kita semua.<br />\r\nHari Raya Waisak merupakan perayaan penting dalam agama Buddha yang diperingati untuk memperingati kelahiran, pencerahan, dan Parinirvana Sang Buddha Gautama. Di tengah kesibukan kita, perayaan ini mengingatkan kita akan pentingnya kedamaian batin dan kebijaksanaan dalam menjalani kehidupan.<br />\r\nRumah Sakit Kartini Kalirejo Lampung Tengah berharap bahwa semangat kebijaksanaan dan kedamaian yang terpancar dari perayaan Hari Raya Waisak akan menginspirasi kita semua untuk menjalani hidup dengan penuh kasih sayang, pengertian, dan toleransi.<br />\r\nSemoga kebahagiaan dan kedamaian senantiasa menghiasi hati kita semua. Selamat Hari Raya Waisak!</p>\r\n', 4, '24052024113559.jpg', 'informasi'),
-(5, '0c38361f5a3cf3be4ecb5cf5e709e36d', 'Edukasi Mengenai TBC Diluncurkan di Ruang Tunggu Poli Rumah Sakit Umum Kartini', '24/05/2024', '2024-05-24 06:55:56', '<p>Di era yang semakin terhubung seperti sekarang ini, edukasi kesehatan adalah kunci penting untuk mencegah penyakit menular. Dalam upaya untuk meningkatkan kesadaran masyarakat tentang Tuberkulosis (TBC), Rumah Sakit Umum Kartini diadakan program edukasi di ruang tunggu Poli. Program ini bertujuan untuk memberikan pengetahuan yang lebih baik tentang TBC kepada pasien dan pengunjung.</p>\r\n\r\n<p>TBC tetap menjadi masalah kesehatan masyarakat yang signifikan di banyak negara, termasuk di Indonesia. Meskipun telah ada kemajuan dalam diagnosis dan pengobatan, kesadaran akan penyakit ini tetap penting untuk mengurangi angka penularan dan meningkatkan akses ke perawatan.</p>\r\n\r\n<p>Dalam program edukasi ini, para pasien dan pengunjung RS Umum Kartini disuguhi dengan berbagai materi edukatif yang disajikan secara visual dan audio di ruang tunggu Poli. Mulai dari infografis yang mudah dipahami hingga video singkat yang menjelaskan tentang penyebab, gejala, diagnosis, dan pengobatan TBC, program ini dirancang untuk memberikan informasi yang komprehensif.</p>\r\n\r\n<p>Selain itu, tim medis dan konselor kesehatan hadir untuk memberikan penjelasan lebih lanjut dan menjawab pertanyaan yang mungkin timbul dari para pasien. Hal ini memberikan kesempatan bagi individu untuk mendapatkan pemahaman yang lebih baik tentang TBC dan bagaimana cara menghadapinya.</p>\r\n\r\n<p>&quot;Kami berkomitmen untuk tidak hanya menyediakan perawatan medis yang berkualitas, tetapi juga untuk meningkatkan kesadaran masyarakat tentang kesehatan,&quot; kata Dr. Anisa, Direktur Medis RS Umum Kartini. &quot;Program edukasi ini adalah langkah konkret kami dalam upaya pencegahan dan pengendalian TBC.&quot;</p>\r\n\r\n<p>Program edukasi mengenai TBC di ruang tunggu Poli RS Umum Kartini diharapkan dapat menjadi contoh bagi rumah sakit lainnya untuk memperluas upaya edukasi serupa. Dengan pengetahuan yang lebih baik tentang TBC, diharapkan akan terjadi peningkatan dalam deteksi dini, pengobatan yang lebih efektif, dan pada akhirnya, penurunan angka kasus TBC di masyarakat</p>\r\n', 2, '24052024014346.jpg', 'informasi');
+(3, 'a428a7b8462014d7785e326960247cd9', 'POLI PENYAKIT DALAM', '17/05/2024', '2024-05-24 06:55:43', '<p>diagnosis, pengobatan, dan manajemen penyakit-penyakit dalam tubuh manusia, terutama yang mempengaruhi organ dalam seperti jantung, paru-paru, ginjal, hati, dan saluran pencernaan</p>\r\n', 1, '17052024023728.jpg', 'poli');
 
 -- --------------------------------------------------------
 
@@ -94,7 +92,7 @@ CREATE TABLE `daftar` (
   `asal_sekolah` varchar(128) DEFAULT NULL,
   `id_jurusan` varchar(30) DEFAULT NULL,
   `agama` varchar(50) DEFAULT NULL,
-  `alamat` text DEFAULT NULL,
+  `alamat` text,
   `rt` varchar(5) DEFAULT NULL,
   `rw` varchar(5) DEFAULT NULL,
   `desa` varchar(128) DEFAULT NULL,
@@ -121,17 +119,17 @@ CREATE TABLE `daftar` (
   `no_ujian` varchar(128) DEFAULT NULL,
   `no_kip` varchar(30) DEFAULT NULL,
   `kip` varchar(256) DEFAULT NULL,
-  `kk` text DEFAULT NULL,
+  `kk` text,
   `kepala_keluarga` varchar(100) DEFAULT NULL,
   `ijazah` varchar(256) DEFAULT NULL,
   `akta` varchar(256) DEFAULT NULL,
   `status_upload` varchar(2) DEFAULT '0',
-  `aktif` int(1) DEFAULT 0,
-  `status` int(1) DEFAULT 0,
+  `aktif` int(1) DEFAULT '0',
+  `status` int(1) DEFAULT '0',
   `tgl_daftar` date DEFAULT NULL,
   `tgl_konfirmasi` date DEFAULT NULL,
-  `konfirmasi` int(1) DEFAULT 0,
-  `password` text DEFAULT NULL,
+  `konfirmasi` int(1) DEFAULT '0',
+  `password` text,
   `show_pass` varchar(100) DEFAULT NULL,
   `id_sesi` varchar(200) DEFAULT NULL,
   `token` varchar(200) DEFAULT NULL
@@ -215,7 +213,7 @@ CREATE TABLE `profil` (
 --
 
 INSERT INTO `profil` (`id_profil`, `nama_app`, `tahun`, `nama`, `alias`, `alamat`, `isi`, `gambar`, `akabest`) VALUES
-(1, 'RSU KARTINI', '(0729) 370028', 'RUMAH SAKIT UMUM KARTINI', 'rumahsakitkartini@yahoo.com', 'Jl. Kartini No.104, Kali Rejo, Kec. Kalirejo, Kabupaten Lampung Tengah, Lampung 34174', '<p>Rumah Sakit Kartini Lampung adalah salah satu fasilitas pelayanan kesehatan terkemuka di Provinsi Lampung, Indonesia. RS Kartini Lampung menyediakan layanan medis dan perawatan berkualitas tinggi dalam berbagai spesialisasi, termasuk layanan gawat darurat, bedah, kandungan, dan lainnya. Rumah sakit ini dikenal karena staf medisnya yang terampil dan terlatih serta fasilitas modern yang mendukung proses perawatan pasien. RS Kartini Lampung berkomitmen untuk memberikan pelayanan kesehatan yang holistik dan bermutu tinggi kepada masyarakat Lampung dan sekitarnya.</p>\r\n', '24052024101408.jpg', 'mardybest@gmail.com'),
+(1, 'RSB RUWAI JURAI', '(0729)09898', 'RUMAH SAKIT BHAYANGKARA RUWAI JURAI', 'admin@rsubhayangkara.com', 'Jl. Pramuka No.88, Rajabasa, Kec. Rajabasa, Kota Bandar Lampung, Lampung', '<p>Rumah Sakit Bhayangkara Ruwai Jurai menyediakan layanan kesehatan yang komprehensif bagi pasien BPJS dan umum melalui berbagai macam poli. Beberapa di antaranya termasuk poli umum, jantung, gigi, mata, THT-OL, penyakit dalam, ginekologi, orthopedi, anak, dan kebidanan.</p>\r\n\r\n<p>Selain poli-poli tersebut, RS Bhayangkara Ruwai Jurai juga dilengkapi dengan fasilitas yang memadai untuk memastikan kenyamanan dan keselamatan pasien. Fasilitas tersebut meliputi ICU (Intensive Care Unit) untuk perawatan intensif pasien dengan kondisi kritis, serta perinatologi untuk perawatan bayi baru lahir yang membutuhkan perhatian khusus. Rumah sakit ini juga memiliki ruang isolasi untuk menangani pasien dengan penyakit menular, memastikan lingkungan yang aman bagi pasien lain.</p>\r\n\r\n<p>Tidak hanya itu, RS Bhayangkara Ruwai Jurai juga menyediakan layanan laboratorium dan radiologi untuk mendukung diagnosis yang akurat dan cepat. Dengan fasilitas laboratorium yang modern, berbagai tes kesehatan dapat dilakukan dengan hasil yang cepat dan terpercaya. Sementara itu, fasilitas radiologi yang lengkap, termasuk CT scan dan MRI, membantu dalam pemeriksaan gambar medis yang mendetail.</p>\r\n\r\n<p>Dengan fasilitas-fasilitas tersebut, RS Bhayangkara Ruwai Jurai &nbsp;berkomitmen untuk memberikan perawatan terbaik bagi pasien BPJS maupun umum. Rumah sakit ini memastikan bahwa setiap pasien mendapatkan pelayanan kesehatan yang optimal, dalam lingkungan yang aman dan nyaman.</p>\r\n\r\n<p>&nbsp;</p>\r\n', '24052024101408.jpg', 'mardybest@gmail.com'),
 (2, 're', '', 'MARDIYANTO', '19081989578978975', '', '', '', '');
 
 -- --------------------------------------------------------
