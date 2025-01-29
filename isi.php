@@ -378,10 +378,7 @@ elseif($_GET['aksi']=='dokterkami'){
                     <div class='team-img rounded-top h-100'>
                         <img src='foto/pegawai/$t[gambar]' class='img-fluid rounded-top w-100' alt=''>
                         <div class='team-icon d-flex justify-content-center'>
-                            <a class='btn btn-square btn-primary text-white rounded-circle mx-1' href=''><i class='fab fa-facebook-f'></i></a>
-                            <a class='btn btn-square btn-primary text-white rounded-circle mx-1' href=''><i class='fab fa-twitter'></i></a>
-                            <a class='btn btn-square btn-primary text-white rounded-circle mx-1' href=''><i class='fab fa-instagram'></i></a>
-                            <a class='btn btn-square btn-primary text-white rounded-circle mx-1' href=''><i class='fab fa-youtube'></i></a>
+                           
                         </div>
                     </div>
                     <div class='team-content text-center border border-primary border-top-0 rounded-bottom p-4'>
