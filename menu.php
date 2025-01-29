@@ -1,6 +1,6 @@
 <?php $current_url = $_SERVER['REQUEST_URI']; ?>
         <!-- Topbar Start -->
-        <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <!-- <div class="container-fluid bg-dark px-5 d-none d-lg-block">
             <div class="row gx-0 align-items-center" style="height: 45px;">
                 <div class="col-lg-8 text-center text-lg-start mb-lg-0">
                     <div class="d-flex flex-wrap">
@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Topbar End -->
 
 
@@ -26,7 +26,8 @@
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
                 <a href="index.php" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0"><img src="foto/logo.png" alt="Logo" style="width: 50px;"> <?php echo"$k_k[nama_app]";?></h1>
+                    <!-- <h1 class="text-primary m-0"><img src="logo.png" alt="Logo" style="width: 50px;"> <?php echo"$k_k[nama_app]";?></h1> -->
+                    <h1 class="text-primary m-0"><img src="logo.png" alt="Logo" > </h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">

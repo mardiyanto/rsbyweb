@@ -82,7 +82,7 @@ include "koneksi.php";
                     <!-- <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p> -->
                 </div>
                 <div class="row g-4 justify-content-center">
-                <?php   $tebaru=mysqli_query($koneksi," SELECT * FROM berita WHERE jenis='poli'");
+                <?php   $tebaru=mysqli_query($koneksi," SELECT * FROM berita WHERE jenis='poli' ORDER BY RAND() LIMIT 4");
     while ($t=mysqli_fetch_array($tebaru)){	?>
                 <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item rounded">
@@ -104,7 +104,9 @@ include "koneksi.php";
                     </div>
                     <?php } ?>
                     <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="Jadwal.php">Jadwal Dokter</a>
+                    <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="Jadwal.php">Jadwal Dokter Kami</a>  
+                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="poli.php">Lihat Poli Kami</a>
+
                     </div>
                 </div>
             </div>
